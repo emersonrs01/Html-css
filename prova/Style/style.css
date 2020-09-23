@@ -1,0 +1,60 @@
+body{
+  margin: 0;
+  height: 450px;
+  width: 1400px;
+}
+.div1 #divbl{
+  float: inline-end;
+  height: 150px;
+  width: 800px;
+  background-color: darkblue;
+}
+.div1 #div2{
+  height:250px;
+  width: 800px;
+}
+.div1 #div2 #divred{
+  display:block;
+  width: 400px;
+  height: 250px;
+  background-color: red;
+  float: right;
+  width: 400px;
+  height: 250px;
+}
+.div1 #div2 #divgr{
+  display: inline;
+  float: right;
+  width: 400px;
+  height: 250px;
+  background-color: darkgreen;
+}
+.div1 #div3{
+  clear: both;
+  height: 50px;
+  width: 800px;
+}
+.div1 #div3 #divamr{
+  float: left;
+  width: 200px;
+  height: 50px;
+  background-color: yellow;
+}
+.div1 #div3 #divci{
+  float: left;
+  width: 200px;
+  height: 50px; 
+  background-color: cyan;
+}
+.div1 #div3 #divmag{
+  float: left;
+  width: 200px;
+  height: 50px;
+  background-color: magenta;
+}
+.div1 #div3 #divbla{
+  width: 200px;
+  height: 50px;
+  float: left;
+  background-color: black;
+}
