@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questao1</title>
+    <script>
+        function checkForm(form)  {
+            for(var i = 0; i < form.elements.length; i++) {
+                if(form.elements[i].value.length <= 2)  {
+                    alert("Preencha TODOS os campos do formulário!");
+                    return false;
+                }
+            }
+            alert("Dados enviados com sucesso!");
+            return true;
+        }
+    </script>
+
+    <style>
+        #body{
+            background-color: rgb(9, 80, 70);        
+            }
+        #div1{
+            clear: both;
+            position: relative;
+            top: 250px;
+            left:700px;
+            width:600px;
+            height: 500px;
+            background-color: rgb(161, 133, 133);
+            border-radius: 12%;
+            }
+        #div1 #form1{
+            text-align: center;
+            padding-top: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #div1 #form1 #botao{
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="div1"> 
+        <form action="questao1.html" method="post" id="form1" name="meuForm" onsubmit="return checkForm(this);">
+            <label>Insira a razao social:</label>
+            <input name="nome" type="text" id="razaoID" required><br><br>
+            <label>Cidade</label>
+            <input name="cidade" type="text" id="cidadeID" required><br><br>
+            <label>UF:</label>
+            <select id="UF" name="UF">
+                <option value="">Selecione</option>
+                <option value="00AC">Acre</option>
+                <option value="00AL">Alagoas</option>
+                <option value="00AP">Amapá</option>
+                <option value="00AM">Amazonas</option>
+                <option value="00BA">Bahia</option>
+                <option value="00CE">Ceará</option>
+                <option value="00DF">Distrito Federal</option>
+                <option value="00ES">Espirito Santo</option>
+                <option value="00GO">Goiás</option>
+                <option value="00MA">Maranhão</option>
+                <option value="00MS">Mato Grosso do Sul</option>
+                <option value="00MT">Mato Grosso</option>
+                <option value="00MG">Minas Gerais</option>
+                <option value="00PA">Pará</option>
+                <option value="00PB">Paraíba</option>
+                <option value="00PR">Paraná</option>
+                <option value="00PE">Pernambuco</option>
+                <option value="00PI">Piauí</option>
+                <option value="00RJ">Rio de Janeiro</option>
+                <option value="00RN">Rio Grande do Norte</option>
+                <option value="00RS">Rio Grande do Sul</option>
+                <option value="00RO">Rondônia</option>
+                <option value="00RR">Roraima</option>
+                <option value="00SC">Santa Catarina</option>
+                <option value="00SP">São Paulo</option>
+                <option value="00SE">Sergipe</option>
+                <option value="00TO">Tocantins</option>
+            </select><br><br>
+            <label>insira o email:</label>
+            <input name="mail" type="email" id="mailID" required><br><br>
+            <input type="submit" id="botao" value="Oi, sou do tipo SUBMIT">
+        </form>
+    <div>
+</body>
+</html>
