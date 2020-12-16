@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>   
+  <script src="./assets/scripts/cadastro.js"></script>
+  <link rel="stylesheet" href="./assets/styles/page-landing.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <header>
+      <img src="" alt="">
+      <h4>Cadastro</h4>
+    </header>
+    <div id="menu">
+      <a href="index.html"> <img src="./assets/image/home.svg" alt="imagem de um controle"> Home</a>
+      <a href="cadastro.html"><img src="./assets/image/form.svg" alt="imagem de um controle"> Cadastro</a>
+      <a href="game.html"><img src="./assets/image/game.svg" alt="imagem de um controle"> Game</a>
+    </div>
+    <div id="conteudo"> <!-- o codigo vai aqui -->
+      <form name="cadastro" action="cadresultWS.html" onsubmit="return valCad()" method="get">
+        <fieldset>
+         <legend>Cadastro:</legend>
+         <p>Nome Completo:</p>
+         <input type="text" id="nome" name="nome" required><br><br>
+         <p>Telefone: </p>
+         <input type="tel" id="tel" name="Fone" placeholder="(54) 9 9999-9999"><br><br>
+         <p for="email">E-Mail: </p>
+         <input type="email" id="email" name="E-Mail" required><br><br>
+         <p for="nascimento">Data de Nascimento: </p>
+         <input type="date" id="nasc" name="Nascimento" placeholder="Exemplo: 07/04/1984"><br><br>
+         <br><br><input type="submit" value="Enviar!">
+        </fieldset>
+       </form>
+    </div>
+    <footer>
+      <p>
+        Emerson Da Rocha<br>
+         Abel Mariani Junior<br>
+         Edgar Neto<br>
+         Josias Broch
+      </p>
+      <p>
+        183004@upf.br<br>
+        182990@upf.br<br>
+        186272@upf.br<br>
+        178224@upf.br
+      </p>
+    </footer>
+  </div>
+  <script type="text/javascript">$("#tel").mask("(00) 0 0000-0000");</script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #757780 0%, #3c3d42 100%);
+}
+.container-fluid{
+  margin:auto;
+  width: 95%;
+  height: 94vh;
+}
+.container-fluid header{
+  margin-top: 1vh;
+  display: flex;
+  width: 100%;
+  height: 5%;
+}
+
+.container-fluid header h4{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:rgb(184, 136, 6);
+  font-weight: bold;
+}
+
+.container-fluid #menu{
+  display: flex;
+  width: 100%;
+  height: 4.5%;
+  background-color: white;
+  border-radius: 20px;
+  background:gray
+}
+.container-fluid #menu a{
+  /*0.7em 1.2em  2.5em*/
+  width: 33.3%;
+  height: 100%;
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background:gray;
+  border-radius: 20px;
+  font-size:2.4vh;
+  color:white;
+  font-weight: bold;
+}
+.container-fluid #menu a img{
+  /*0.7em 1.2em  2.5em*/
+  width: auto;
+  height: 50%;
+  padding-right: 1vh;
+}
+.container-fluid #menu a:hover{
+  /*0.7em 1.2em  2.5em*/
+  background-color: white;
+  color:black;
+}
+
+
+.container-fluid footer{
+  background: linear-gradient(90deg, #3c3d42 0%, #757780 100%);
+  display:flex;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 13%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color:white;
+  font-weight: bold;
+}
+.container-fluid footer p{
+  font-size:1.8vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+
+}
+.container-fluid #conteudo{
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  width: 100%;
+  height: 80%;
+  font-weight: bold;
+  background:linear-gradient(90deg, rgb(214, 159, 8) 0%, rgb(146, 109, 6) 100%);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 30px;
+}
+.container-fluid #conteudo1{
+  margin-top: 1vh;
+  margin-bottom: .4vh;
+  width: 100%;
+  height: 80%;
+  font-weight: bold;
+  display:inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 30px;
+}
+.container-fluid #conteudo1 #pch1{
+  width: 100%;
+  height: 50%;
+  background:linear-gradient(90deg, rgb(214, 159, 8) 0%, rgb(146, 109, 6) 100%);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  font-size: 2vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container-fluid #conteudo1 #pch2{
+  width: 100%;
+  height: 25%;
+  font-size: 2vh;
+  background:linear-gradient(90deg, rgb(214, 159, 8) 0%, rgb(146, 109, 6) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container-fluid #conteudo1 #pch3{
+  width: 100%;
+  height: 25%;
+  font-size: 2vh;
+  background:linear-gradient(90deg, rgb(214, 159, 8) 0%, rgb(146, 109, 6) 100%);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container-fluid #conteudo p{
+  font-size: 2vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height:1vh;
+}
+.container-fluid #conteudo #main{
+  display:flex;
+  width: 95%;
+  height:95%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container-fluid #conteudo #main #game{
+  width: 100%;
+}
